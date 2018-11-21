@@ -21,6 +21,6 @@ export class FactorialComponent implements OnInit {
   }
 
   calcular() {
-    this.respuesta = this.factorial(this.numero);]
+    this.respuesta = this.factorial(this.numero);
   }
 }
