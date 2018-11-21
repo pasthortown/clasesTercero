@@ -1,0 +1,22 @@
+<div class="col-12">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fep01.epimg.net%2Felpais%2Fimagenes%2F2017%2F03%2F08%2Fel_aleph%2F1488970880_865812_1488971722_noticia_normal.jpg&f=1" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FACTORIAL</h5>
+      <div class="form-group">
+        <label for="numero1">Número</label>
+        <input type="number" class="form-control" [(ngModel)]="numero" id="numero1" placeholder="Ingrese el número">
+      </div>
+      <div class="form-group">
+        <div class="alert alert-info" role="alert">
+          La respuesta es: {{respuesta}}
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-12 text-right">
+          <button type="button" (click)="calcular()" class="btn btn-primary">Calcular</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
