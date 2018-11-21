@@ -5,16 +5,16 @@
       <h5 class="card-title">N Primeros Primos</h5>
       <div class="form-group">
         <label for="numero1">Número de Elementos</label>
-        <input type="number" class="form-control" id="numero1" placeholder="Ingrese el número">
+        <input type="number" [(ngModel)]="numero" class="form-control" id="numero1" placeholder="Ingrese el número">
       </div>
       <div class="form-group">
         <div class="alert alert-info" role="alert">
-          La respuesta es:
+          La respuesta es: {{numerosPrimos}}
         </div>
       </div>
       <div class="form-group">
         <div class="col-12 text-right">
-          <button type="button" class="btn btn-primary">Calcular</button>
+          <button type="button" (click) ="calcular()"  class="btn btn-primary">Calcular</button>
         </div>
       </div>
     </div>
