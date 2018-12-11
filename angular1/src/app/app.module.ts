@@ -11,6 +11,10 @@ import { Ej1Component } from './body/ej1/ej1.component';
 import { Ej2Component } from './body/ej2/ej2.component';
 import { Ej3Component } from './body/ej3/ej3.component';
 import { Ej4Component } from './body/ej4/ej4.component';
+import { PruebaComponent } from './prueba/prueba.component';
+import { ModuleComponent } from './module/module.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { Prueba\routingModule } from './prueba/routing.module';
 
 @NgModule({
   declarations: [
@@ -23,11 +27,15 @@ import { Ej4Component } from './body/ej4/ej4.component';
     Ej1Component,
     Ej2Component,
     Ej3Component,
-    Ej4Component
+    Ej4Component,
+    PruebaComponent,
+    ModuleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
+    Prueba\routingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
