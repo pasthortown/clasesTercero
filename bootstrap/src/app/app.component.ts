@@ -1,3 +1,4 @@
+import { MatematicasService } from './matematicas.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  resultado: number;
+
+  constructor(private matematicas: MatematicasService) {
+    this.resultado = this.matematicas.suma(4, 5);
+  }
+
 }
